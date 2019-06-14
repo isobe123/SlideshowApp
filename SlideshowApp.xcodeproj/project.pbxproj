@@ -12,6 +12,9 @@
 		817C932022B2460200D27F49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817C931E22B2460200D27F49 /* Main.storyboard */; };
 		817C932222B2460300D27F49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 817C932122B2460300D27F49 /* Assets.xcassets */; };
 		817C932522B2460300D27F49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817C932322B2460300D27F49 /* LaunchScreen.storyboard */; };
+		817C932F22B26E7B00D27F49 /* penguin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 817C932E22B26E7B00D27F49 /* penguin.jpg */; };
+		817C933122B26E8B00D27F49 /* antarctica.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 817C933022B26E8B00D27F49 /* antarctica.jpg */; };
+		817C933322B38A3000D27F49 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C933222B38A3000D27F49 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		817C932122B2460300D27F49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		817C932422B2460300D27F49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		817C932622B2460300D27F49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		817C932E22B26E7B00D27F49 /* penguin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = penguin.jpg; sourceTree = "<group>"; };
+		817C933022B26E8B00D27F49 /* antarctica.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = antarctica.jpg; sourceTree = "<group>"; };
+		817C933222B38A3000D27F49 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,12 @@
 				817C931A22B2460200D27F49 /* AppDelegate.swift */,
 				817C931C22B2460200D27F49 /* ViewController.swift */,
 				817C931E22B2460200D27F49 /* Main.storyboard */,
+				817C932E22B26E7B00D27F49 /* penguin.jpg */,
+				817C933022B26E8B00D27F49 /* antarctica.jpg */,
 				817C932122B2460300D27F49 /* Assets.xcassets */,
 				817C932322B2460300D27F49 /* LaunchScreen.storyboard */,
 				817C932622B2460300D27F49 /* Info.plist */,
+				817C933222B38A3000D27F49 /* ResultViewController.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -122,6 +131,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817C933122B26E8B00D27F49 /* antarctica.jpg in Resources */,
+				817C932F22B26E7B00D27F49 /* penguin.jpg in Resources */,
 				817C932522B2460300D27F49 /* LaunchScreen.storyboard in Resources */,
 				817C932222B2460300D27F49 /* Assets.xcassets in Resources */,
 				817C932022B2460200D27F49 /* Main.storyboard in Resources */,
@@ -137,6 +148,7 @@
 			files = (
 				817C931D22B2460200D27F49 /* ViewController.swift in Sources */,
 				817C931B22B2460200D27F49 /* AppDelegate.swift in Sources */,
+				817C933322B38A3000D27F49 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SS82TQ5J38;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SS82TQ5J38;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
