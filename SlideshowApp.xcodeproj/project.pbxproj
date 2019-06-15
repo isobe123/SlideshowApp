@@ -15,6 +15,7 @@
 		817C932F22B26E7B00D27F49 /* penguin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 817C932E22B26E7B00D27F49 /* penguin.jpg */; };
 		817C933122B26E8B00D27F49 /* antarctica.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 817C933022B26E8B00D27F49 /* antarctica.jpg */; };
 		817C933322B38A3000D27F49 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817C933222B38A3000D27F49 /* ResultViewController.swift */; };
+		81AAFD4522B4F986006A446B /* penguin2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81AAFD4422B4F986006A446B /* penguin2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		817C932E22B26E7B00D27F49 /* penguin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = penguin.jpg; sourceTree = "<group>"; };
 		817C933022B26E8B00D27F49 /* antarctica.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = antarctica.jpg; sourceTree = "<group>"; };
 		817C933222B38A3000D27F49 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		81AAFD4422B4F986006A446B /* penguin2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = penguin2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				817C931E22B2460200D27F49 /* Main.storyboard */,
 				817C932E22B26E7B00D27F49 /* penguin.jpg */,
 				817C933022B26E8B00D27F49 /* antarctica.jpg */,
+				81AAFD4422B4F986006A446B /* penguin2.jpg */,
 				817C932122B2460300D27F49 /* Assets.xcassets */,
 				817C932322B2460300D27F49 /* LaunchScreen.storyboard */,
 				817C932622B2460300D27F49 /* Info.plist */,
@@ -136,6 +139,7 @@
 				817C932522B2460300D27F49 /* LaunchScreen.storyboard in Resources */,
 				817C932222B2460300D27F49 /* Assets.xcassets in Resources */,
 				817C932022B2460200D27F49 /* Main.storyboard in Resources */,
+				81AAFD4522B4F986006A446B /* penguin2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

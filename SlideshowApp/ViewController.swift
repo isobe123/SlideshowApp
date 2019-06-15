@@ -30,11 +30,13 @@ class ViewController: UIViewController {
     }
     
     func displayImage(){
-        let imageNameArray = ["penguin.jpg","antarctica.jpg"]
+        let imageNameArray = ["penguin.jpg","antarctica.jpg","penguin2.jpg"]
+        let lastIndex = imageNameArray.count - 1
+        
         if dispImageNo < 0{
-            dispImageNo = 1
+            dispImageNo = lastIndex
         }
-        if dispImageNo > 1{
+        if dispImageNo > lastIndex{
             dispImageNo = 0
         }
         let name = imageNameArray[dispImageNo]
@@ -48,7 +50,7 @@ class ViewController: UIViewController {
             self.timer = Timer.scheduledTimer(timeInterval:2.0, target:self, selector:#selector(updateTimer(_:)), userInfo:nil, repeats:true)
             sender.setTitle("停止", for:.normal)
             for button in invaldate{
-            button.isEnabled = false
+              button.isEnabled = false
             }
         }else{
             self.timer.invalidate()
@@ -56,7 +58,7 @@ class ViewController: UIViewController {
             self.timer = nil
             sender.setTitle("再生", for:.normal)
             for button in invaldate{
-            button.isEnabled = true
+              button.isEnabled = true
             }
         }
     }
@@ -71,15 +73,22 @@ class ViewController: UIViewController {
         dispImageNo += 1
         displayImage()
     }
-    
+    @IBOutlet weak var start: UIButton!
     
     @IBAction func onTapImage(_ sender: Any) {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         resultViewController.image = self.imageView.image
+        self.timer.invalidate()
+        self.timer_sec = 0
+        self.timer = nil
+        start.setTitle("再生", for:.normal)
     }
     @IBAction func unwind(_ segue:UIStoryboardSegue){
+        for button in invaldate{
+            button.isEnabled = true
+        }
     }
 }
 

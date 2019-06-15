@@ -74,6 +74,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="CU9-vM-med" id="006-mE-VmA"/>
+                        <outlet property="start" destination="YSG-2g-wFj" id="Ii0-s8-6yM"/>
                         <outletCollection property="invaldate" destination="fmI-CU-277" collectionClass="NSMutableArray" id="Lyf-I8-4Vp"/>
                         <outletCollection property="invaldate" destination="6dJ-BX-8ZE" collectionClass="NSMutableArray" id="7YX-ur-Avt"/>
                     </connections>
