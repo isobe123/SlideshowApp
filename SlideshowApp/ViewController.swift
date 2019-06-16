@@ -80,10 +80,12 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         resultViewController.image = self.imageView.image
-        self.timer.invalidate()
-        self.timer_sec = 0
-        self.timer = nil
-        start.setTitle("再生", for:.normal)
+        if self.timer != nil{
+            self.timer.invalidate()
+            self.timer_sec = 0
+            self.timer = nil
+            start.setTitle("再生", for:.normal)
+        }
     }
     @IBAction func unwind(_ segue:UIStoryboardSegue){
         for button in invaldate{
